@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+:root {
+  --light-bg: #ffffff;
+  --light-title: #000000;
+  --light-text: #595959;
+  --dark-bg: #000000;
+  --dark-title: #ffffff;
+  --dark-text: #969696;
+
+  --bg-colour: var(--light-bg);
+  --title-colour: var(--light-title);
+  --text-colour: var(--light-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-colour: var(--dark-bg);
+    --title-colour: var(--dark-title);
+    --text-colour: var(--dark-text);
+  }
+}
+
+::selection {
+  color: var(--bg-colour);
+  background: var(--title-colour);
+}
+
+::-moz-selection {
+  color: var(--bg-colour);
+  background: var(--title-colour);
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--bg-colour);
+  font-family: "Inter", sans-serif;
+  --minFontSize: 8px;
+  --maxFontSize: 16px;
+  --scaler: 1.5vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: block;
+  padding: 40px;
+}
+
+footer {
+  padding: 40px;
+}
+
+footer > a:first-child {
+  margin-right: 32px;
+}
+
+h1 {
+  color: var(--title-colour);
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0;
+  font-size: 4rem;
+  max-width: 80rem;
+}
+
+a {
+  color: var(--text-colour);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 2rem;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
