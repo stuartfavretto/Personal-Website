@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-
 :root {
   --light-bg: #ffffff;
   --light-title: #000000;
@@ -35,7 +33,7 @@ html {
   height: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: var(--bg-colour);
-  font-family: "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   --minFontSize: 8px;
   --maxFontSize: 16px;
   --scaler: 1.5vw;
@@ -52,11 +50,11 @@ body {
 
 main {
   display: block;
-  padding: 40px;
+  padding: clamp(24px, 1.5vw, 40px);
 }
 
 footer {
-  padding: 40px;
+  padding: clamp(24px, 1.5vw, 40px);
 }
 
 footer > a:first-child {
