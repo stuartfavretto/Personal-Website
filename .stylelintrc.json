@@ -1,0 +1,11 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-value-no-unknown-custom-properties"],
+  "rules": {
+    "csstools/value-no-unknown-custom-properties": true,
+    "declaration-block-no-duplicate-properties": true,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": true,
+    "property-no-vendor-prefix": null
+  }
+}

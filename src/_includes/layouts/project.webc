@@ -1,0 +1,21 @@
+---
+layout: layouts/base.webc
+---
+<article class="case-study">
+  <header class="case-study-header">
+    <h1 @text="title"></h1>
+    <p class="metadata" webc:if="employer" @text="employer"></p>
+    <p class="case-study-summary" webc:if="summary" @text="summary"></p>
+    <dl class="project-facts" webc:if="year || role">
+      <div webc:if="year">
+        <dt>Year</dt>
+        <dd><time :datetime="String(year)" @text="year"></time></dd>
+      </div>
+      <div webc:if="role">
+        <dt>Role</dt>
+        <dd @text="role"></dd>
+      </div>
+    </dl>
+  </header>
+  <section class="prose" aria-label="Case study content" @raw="content"></section>
+</article>

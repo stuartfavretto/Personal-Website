@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#fafaf9" id="theme-color">
+    <meta name="description" :content="description || site.description">
+    <meta property="og:type" :content="contentType === 'project' && !stub ? 'article' : 'website'">
+    <meta property="og:title" :content="title ? `${title} — ${site.name}` : site.name">
+    <meta property="og:description" :content="description || site.description">
+    <meta property="og:url" :content="site.url + page.url">
+    <meta property="og:image" :content="site.url + (socialImage || site.socialImage)">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" :content="socialImageAlt || site.socialImageAlt">
+    <meta name="twitter:card" content="summary_large_image">
+    <title @text="title ? `${title} — ${site.name}` : site.name"></title>
+    <link rel="canonical" :href="site.url + page.url">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <script webc:keep>
+      (function () {
+        var root = document.documentElement;
+        var theme = null;
+        var redLight = false;
+
+        try {
+          theme = localStorage.getItem("sf-theme");
+          redLight = localStorage.getItem("sf-red-light") === "1";
+        } catch (error) {
+          theme = null;
+        }
+
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        root.dataset.theme = theme;
+        root.toggleAttribute("data-red-light", redLight);
+
+        var themeColor = redLight
+          ? (theme === "dark" ? "#000000" : "#ff0000")
+          : (theme === "dark" ? "#181818" : "#fafaf9");
+        document.getElementById("theme-color").setAttribute("content", themeColor);
+      }());
+    </script>
+    <link rel="stylesheet" href="/assets/styles.css" webc:keep>
+    <script src="/assets/display-modes.js" defer webc:keep></script>
+    <script webc:if="showGolfFooter" src="/assets/golf-footer.js" defer webc:keep></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <svg class="display-mode-filter" width="0" height="0" aria-hidden="true" focusable="false">
+      <filter id="red-ramp" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values="
+          0.2126 0.7152 0.0722 0 0
+          0      0      0      0 0
+          0      0      0      0 0
+          0      0      0      1 0"></feColorMatrix>
+      </filter>
+    </svg>
+    <site-header webc:if="!hideSiteHeader" :name="site.name"></site-header>
+    <main id="content" tabindex="-1" @raw="content"></main>
+    <golf-footer webc:if="showGolfFooter"></golf-footer>
+  </body>
+</html>

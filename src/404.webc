@@ -1,0 +1,10 @@
+---
+layout: layouts/base.webc
+title: Page not found
+permalink: 404.html
+eleventyExcludeFromCollections: true
+---
+<article class="not-found">
+  <h1>This page doesn't exist</h1>
+  <p>It may have moved, or it may never have existed in the first place.</p>
+</article>

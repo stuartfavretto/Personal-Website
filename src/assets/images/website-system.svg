@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Website publishing system</title>
+  <desc id="desc">A diagram connecting Markdown content and WebC components to a semantic static website.</desc>
+  <rect width="1440" height="900" fill="#d8dce4"/>
+  <g fill="none" stroke="#252b33" stroke-width="3">
+    <rect x="120" y="280" width="300" height="340" rx="150"/>
+    <rect x="570" y="160" width="300" height="580" rx="150"/>
+    <rect x="1020" y="280" width="300" height="340" rx="150"/>
+    <path d="M420 450h150M870 450h150"/>
+  </g>
+  <g fill="#252b33" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="24" text-anchor="middle">
+    <text x="270" y="438">CONTENT</text>
+    <text x="270" y="474">.md</text>
+    <text x="720" y="438">STRUCTURE</text>
+    <text x="720" y="474">.webc</text>
+    <text x="1170" y="438">WEBSITE</text>
+    <text x="1170" y="474">.html</text>
+  </g>
+</svg>

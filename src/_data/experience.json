@@ -1,0 +1,54 @@
+[
+  {
+    "employer": "Garmin",
+    "location": "Olathe, KS",
+    "roles": [
+      {
+        "role": "Product Manager",
+        "start": "2025-05"
+      },
+      {
+        "role": "Lead Product Designer",
+        "start": "2023-06",
+        "end": "2025-08"
+      },
+      {
+        "role": "Senior Product Designer",
+        "start": "2021-03",
+        "end": "2023-06"
+      }
+    ]
+  },
+  {
+    "employer": "Nokia",
+    "location": "San Francisco, CA",
+    "roles": [
+      {
+        "role": "Senior Interaction Designer",
+        "start": "2019-07",
+        "end": "2020-06"
+      },
+      {
+        "role": "Interaction Designer",
+        "start": "2015-01",
+        "end": "2019-07"
+      }
+    ]
+  },
+  {
+    "employer": "LUNAR Design",
+    "location": "San Francisco, CA",
+    "roles": [
+      {
+        "role": "Visual Designer",
+        "start": "2013-07",
+        "end": "2014-10"
+      },
+      {
+        "role": "Visual Design Intern",
+        "start": "2013-03",
+        "end": "2013-06"
+      }
+    ]
+  }
+]

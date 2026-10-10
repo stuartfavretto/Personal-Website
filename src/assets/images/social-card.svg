@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Stuart Favretto</title>
+  <desc id="description">Product manager and product designer</desc>
+  <rect width="1200" height="630" fill="#fafaf9"/>
+  <g fill="#262625" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="112" y="282" font-size="76" font-weight="650" letter-spacing="-2">Stuart Favretto</text>
+    <text x="116" y="350" font-size="30" font-weight="400" fill="#62625e">Product manager and product designer</text>
+  </g>
+  <path d="M116 414H1084" stroke="#262625" stroke-opacity="0.15"/>
+</svg>

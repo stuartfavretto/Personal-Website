@@ -1,0 +1,25 @@
+---
+layout: layouts/base.webc
+showGolfFooter: true
+---
+<header class="introduction">
+  <p webc:for="paragraph of site.introduction" @text="paragraph"></p>
+  <contact-links :email="site.email" :linkedin="site.linkedin"></contact-links>
+</header>
+<section webc:if="publication.publishWork" id="work" class="home-section" aria-labelledby="work-heading">
+  <h2 id="work-heading">Selected Work</h2>
+  <ul class="work-list" webc:if="collections.projects.some(project => project.data.featured)">
+    <li webc:for="project of collections.projects.filter(project => project.data.featured)">
+      <a class="work-link" :href="project.data.externalUrl || project.url">
+        <h3 @text="project.data.title"></h3>
+        <p class="metadata" webc:if="project.data.stub">Case study coming soon.</p>
+        <p class="metadata" webc:elseif="project.data.contribution || project.data.summary" @text="project.data.contribution || project.data.summary"></p>
+      </a>
+    </li>
+  </ul>
+  <p class="secondary" webc:else>Selected work is being prepared for publication.</p>
+</section>
+<section class="home-section" aria-labelledby="experience-heading">
+  <h2 id="experience-heading">Experience</h2>
+  <experience-list :entries="experience"></experience-list>
+</section>

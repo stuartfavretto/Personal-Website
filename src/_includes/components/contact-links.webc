@@ -1,0 +1,3 @@
+<address class="contact-links">
+  <p>You can connect with me on <a :href="linkedin" target="_blank" rel="me noopener noreferrer">LinkedIn</a>, or get in touch by <a :href="`mailto:${email}`">email</a>.</p>
+</address>

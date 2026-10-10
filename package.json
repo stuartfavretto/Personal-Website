@@ -1,0 +1,26 @@
+{
+  "name": "stuart-favretto-dot-com",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "develop": "eleventy --serve",
+    "prebuild": "node scripts/clean-site.js",
+    "build": "eleventy",
+    "validate:css": "stylelint \"src/**/*.css\"",
+    "validate:html": "html-validate \"_site/**/*.html\"",
+    "validate:links": "node scripts/check-links.js",
+    "validate:content": "node scripts/check-content.js",
+    "validate": "npm run validate:css && npm run build && npm run validate:html && npm run validate:links && npm run validate:content",
+    "develop:work": "WORK_PREVIEW=true eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "gray-matter": "^4.0.3",
+    "html-validate": "^10.4.0",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-value-no-unknown-custom-properties": "^6.1.1"
+  }
+}

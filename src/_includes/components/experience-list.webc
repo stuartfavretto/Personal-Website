@@ -1,0 +1,17 @@
+<script webc:setup>
+  function formatMonth(value) {
+    const [year, month] = value.split("-");
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    return `${months[Number(month) - 1]} ${year}`;
+  }
+</script>
+<section class="experience-employer" webc:for="group of entries" :aria-labelledby="`experience-employer-${entries.indexOf(group)}`">
+  <h3 :id="`experience-employer-${entries.indexOf(group)}`" @text="group.employer"></h3>
+  <p class="metadata experience-location" @text="group.location"></p>
+  <ol class="experience-roles">
+    <li webc:for="job of [...group.roles].sort((a, b) => b.start.localeCompare(a.start))">
+      <h4 @text="job.role"></h4>
+      <p class="secondary"><time :datetime="job.start" @text="formatMonth(job.start)"></time><span aria-hidden="true">–</span><span class="visually-hidden"> to </span><time webc:if="job.end" :datetime="job.end" @text="formatMonth(job.end)"></time><span webc:else>Present</span></p>
+    </li>
+  </ol>
+</section>

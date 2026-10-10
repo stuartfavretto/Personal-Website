@@ -1,0 +1,56 @@
+<footer class="golf-footer" data-golf-footer>
+  <button class="golf-scene" type="button" aria-label="Play a golf shot" disabled>
+    <svg viewBox="0 0 600 200" aria-hidden="true" focusable="false" class="golf-art secondary">
+      <g class="golf-scenery">
+        <g class="golf-tree golf-tree-1">
+          <text x="217.2" y="108">/\</text>
+          <text x="210" y="120">/||\</text>
+          <text x="217.2" y="132">||</text>
+        </g>
+        <g class="golf-tree golf-tree-2">
+          <text x="246" y="96">/\</text>
+          <text x="238.8" y="108">/||\</text>
+          <text x="238.8" y="120">/||\</text>
+          <text x="246" y="132">||</text>
+        </g>
+        <g class="golf-tree golf-tree-3">
+          <text x="274.8" y="108">/\</text>
+          <text x="267.6" y="120">/||\</text>
+          <text x="274.8" y="132">||</text>
+        </g>
+        <g class="golf-tree golf-tree-4">
+          <text x="303.6" y="96">/\</text>
+          <text x="296.4" y="108">/||\</text>
+          <text x="296.4" y="120">/||\</text>
+          <text x="303.6" y="132">||</text>
+        </g>
+        <text x="20" y="137">__..───..__</text>
+        <text x="115" y="139">__..───                 ───..__</text>
+        <text x="455" y="145">───..__          __..──</text>
+        <text x="21" y="154">  ~ ~     ~       ~ ~     ~</text>
+        <g class="golf-water golf-water-one"><text x="10" y="165">───   ─────     ──     ─────   ──</text></g>
+        <g class="golf-water golf-water-two"><text x="27" y="178">  ─────    ───    ─────    ──</text></g>
+        <g class="golf-water golf-water-three"><text x="12" y="190">────    ──────     ───    ─────</text></g>
+        <text x="272" y="148">  .────────────────.</text>
+        <text x="251" y="161">.'                      '.</text>
+        <text x="251" y="174">'────────────────────────'</text>
+        <text x="215" y="194">'       ,           '         ,          '</text>
+        <text x="475" y="176"> '    ,    '</text>
+      </g>
+      <g class="golf-flag">
+        <text x="378" y="109">|</text>
+        <text x="378" y="121">|</text>
+        <text x="378" y="133">|</text>
+        <text x="378" y="145">|</text>
+        <text x="378" y="157">|</text>
+        <g class="golf-pennant">
+          <text x="385" y="104">┌───┐</text>
+          <text x="385" y="116">│   │</text>
+          <text x="385" y="128">└───┘</text>
+        </g>
+      </g>
+      <text class="golf-cup" x="377" y="163">⌣</text>
+      <g class="golf-ball" opacity="0"><text x="-4" y="4">●</text></g>
+    </svg>
+  </button>
+</footer>
