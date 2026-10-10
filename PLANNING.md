@@ -39,21 +39,20 @@ The validation suite checks generated HTML and internal assets/links, and builds
 
 Review at 320px, 390px, 768px, wide desktop, 200% zoom, keyboard navigation, and both color schemes. The golf footer respects reduced motion and pauses when offscreen or the tab is hidden.
 
-## Content and launch requirements
+## Content and publication requirements
 
 Employment history has been supplied and transcribed. Selected work links to Garmin Golf App, Nokia OZO Live, and LUNAR 30th Anniversary, in that order. Garmin Golf App now has a complete draft structure based on the supplied platform-migration direction, with placeholder narrative and outcomes explicitly labeled on the page. Nokia and LUNAR remain minimal stubs. Replace all placeholder claims with approved evidence before launch.
 
 Project pages use the shared site identity as their home navigation, followed by the project title. Omit a separate “Back to home” link, the case-study eyebrow, and cross-project navigation; no page-specific browser JavaScript is added. Optional year and role metadata is omitted when absent.
 
-Before launch:
+Before publishing Work:
 - Keep Work disabled for the initial release. Before enabling it, finish the case studies with specific contributions and supported outcomes.
 - Verify the supplied employment history in its final layout.
 - Review imagery, credits, confidentiality, and final copy.
 - Run all checks and review mobile hardware.
-- Verify GitHub Pages, domain ownership, DNS, HTTPS, redirects, and 404 behavior.
-- Retire Firebase only after the new custom-domain site works reliably.
+- Verify redirects, project URLs, social previews, and 404 behavior in production.
 
-Hosting remains GitHub Pages. Domain migration is a separate pending step.
+GitHub Pages hosts the production site at `stuartfavretto.com`. Pushes to `main` are validated and deployed by GitHub Actions.
 
 ## Golf landscape footer
 
