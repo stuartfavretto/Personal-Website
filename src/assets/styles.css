@@ -240,7 +240,7 @@
 
   .work-list {
     list-style: none;
-    margin: var(--space-3) 0 0;
+    margin: var(--space-8) 0 0;
     padding: 0;
   }
 
@@ -280,11 +280,11 @@
   }
 
   .experience-employer {
-    margin-block-start: var(--space-10);
+    margin-block-start: var(--space-8);
   }
 
   .experience-employer:first-of-type {
-    margin-block-start: var(--space-10);
+    margin-block-start: var(--space-8);
   }
 
   .experience-location {
