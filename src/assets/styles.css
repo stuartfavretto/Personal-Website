@@ -321,7 +321,7 @@
 
   .site-header,
   .case-study-header {
-    margin-block-end: var(--space-10);
+    margin-block-end: var(--space-8);
   }
 
   .site-header {
